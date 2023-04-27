@@ -23,13 +23,22 @@ def find_min_max(numbers):
 def sort_temperature():
     print("sort_temperature")
 
-def calc_median_temperature():
-    print("calc_median_temperature")
+def calc_median_temperature(numbers):
+    sorted_temps = sorted(numbers)   # The sorted() function is used to sort the numbers in ascending order.
+    n = len(sorted_temps)   # The length of the sorted list is calculated and stored in n.
+    mid = n // 2    #The middle index of the list is calculated using integer division (//) and stored in mid.
+    if n % 2 == 0:
+        median = (sorted_temps[mid - 1] + sorted_temps[mid]) / 2
+    else:
+        median = sorted_temps[mid]
+    return median
 
 numbers = get_user_input()
 avg_temp = calc_average(numbers)
 min_max = find_min_max(numbers)
+median = calc_median_temperature(numbers)
 
 print('Average: ', avg_temp)
+print('Median: ', median)
 print('Minimum: ', min_max[0])
 print('Maximum: ', min_max[1])
