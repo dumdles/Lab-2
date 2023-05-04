@@ -15,10 +15,10 @@ def get_user_input():
     print(numbers)  # print the list of floats
     return numbers
 
-def find_min_max(numbers):
-    min_num = min(numbers)
-    max_num = max(numbers)
-    return [min_num, max_num]
+def find_min_max(number):
+    min_num = min(number)
+    max_num = max(number)
+    return min_num, max_num
 
 def sort_temperature():
     print("sort_temperature")
@@ -33,12 +33,12 @@ def calc_median_temperature(numbers):
         median = sorted_temps[mid]
     return median
 
-numbers = get_user_input()
-avg_temp = calc_average(numbers)
-min_max = find_min_max(numbers)
-median = calc_median_temperature(numbers)
+#numbers = get_user_input()
+#avg_temp = calc_average(numbers)
+#min_max = find_min_max(numbers)
+#median = calc_median_temperature(numbers)
 
-print('Average: ', avg_temp)
-print('Median: ', median)
-print('Minimum: ', min_max[0])
-print('Maximum: ', min_max[1])
+#print('Average: ', avg_temp)
+#print('Median: ', median)
+#print('Minimum: ', min_max[0])
+#print('Maximum: ', min_max[1])
