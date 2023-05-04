@@ -25,7 +25,7 @@ def sort_temperature():
 
 def calc_median_temperature(numbers):
     sorted_temps = sorted(numbers)   # The sorted() function is used to sort the numbers in ascending order.
-    n = len(sorted_temps)   # The length of the sorted list is calculated and stored in n.
+    n = len(sorted_temps)   # The length of the sorted list is calculated 2and stored in n.
     mid = n // 2    #The middle index of the list is calculated using integer division (//) and stored in mid.
     if n % 2 == 0:
         median = (sorted_temps[mid - 1] + sorted_temps[mid]) / 2
